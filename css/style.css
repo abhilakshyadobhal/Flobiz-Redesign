@@ -1,0 +1,24 @@
+.blogContents {
+  margin-top: 100px;
+}
+
+.whiteFooter {
+  background-color: white !important;
+}
+
+.createBtn,
+.postCommentBtn {
+  background-color: #4c3cce;
+  color: white;
+}
+
+.createBtn:hover,
+.postCommentBtn:hover {
+  color: white;
+}
+
+@media (min-width: 992px) {
+  .blogCard {
+    width: 40%;
+  }
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Material Design for Bootstrap</title>
+  <!-- MDB icon -->
+  <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Material Design Bootstrap -->
+  <link rel="stylesheet" href="css/mdb.min.css">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.ckeditor.com/4.11.1/standard/ckeditor.js"></script>
+</head>
+<body>
+
+  <html lang="en" class="full-height">
+
+    <!--Main Navigation-->
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
+        <a class="navbar-brand" href="./index.html">    
+          <img src="./img/logo-without-text.png" width="100" alt=""/>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./addPost.html">Add Post</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    
+    <!--Main Navigation-->
+    <main class="mb-5 py-3 px-5 container blogContents">
+
+      <!-- Card -->
+      <div class="card">
+        <!-- Card content -->
+        <div class="card-body">
+
+          <!-- Title -->
+          <h4 class="card-title">Create New Post</h4>
+          <!-- Form --> 
+        <form style="color: #757575;" action="#!">
+          <!-- Title -->
+          <div class="md-form mt-3">
+              <input type="text" id="title" class="form-control">
+              <label for="title">Title</label>
+          </div>
+
+          <!-- Image URL -->
+          <div class="md-form">
+              <input type="text" id="imgUrl" class="form-control">
+              <label for="imgUrl">Image Url</label>
+          </div>
+
+          <!--Description-->
+          <div class="md-form mt-4">
+            Description
+            <br>
+            <br>
+            <textarea id="description" class="form-control md-textarea" rows="3"></textarea>
+          </div>
+        
+          <!-- Button -->
+          <button type="submit" class="btn createBtn">Create</button>
+      </form>
+      <!-- Form -->
+
+
+        </div>
+
+      </div>
+<!-- Card -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small unique-color-dark">
+
+      <div class="px-4" style="background-color: #4c3cce;">
+          <!-- Grid row-->
+          <div class="row py-4 d-flex align-items-center">
+
+            <!-- Grid column -->
+            <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+              <h6 class="mb-0">Get connected with us on social networks!</h6>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-6 col-lg-7 text-center text-md-right">
+
+              <!-- Facebook -->
+              <a class="fb-ic">
+                <i class="fab fa-facebook-f white-text mr-4"> </i>
+              </a>
+              <!-- Twitter -->
+              <a class="tw-ic">
+                <i class="fab fa-twitter white-text mr-4"> </i>
+              </a>
+              <!-- Google +-->
+              <a class="gplus-ic">
+                <i class="fab fa-google-plus-g white-text mr-4"> </i>
+              </a>
+              <!--Linkedin -->
+              <a class="li-ic">
+                <i class="fab fa-linkedin-in white-text mr-4"> </i>
+              </a>
+              <!--Instagram-->
+              <a class="ins-ic">
+                <i class="fab fa-instagram white-text"> </i>
+              </a>
+
+            </div>
+            <!-- Grid column -->
+
+          </div>
+          <!-- Grid row-->
+      </div>
+      <!-- Copyright -->
+      <div class="footer-copyright text-center text-dark py-3 whiteFooter"><b>© 2019 Copyright : </b>
+        <a class="navbar-brand" href="#">    
+          <img src="./img/logo-without-text.png" width="100" alt=""/>
+        </a>
+      </div>
+      <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+    <script>
+      window.onload = function() {
+         CKEDITOR.replace('description');
+      };
+  </script>
+  
+  <!-- jQuery -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Your custom scripts (optional) -->
+  <script type="text/javascript"></script>
+
+</body>
+</html>
