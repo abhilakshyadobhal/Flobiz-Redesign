@@ -7,18 +7,59 @@
 }
 
 .createBtn,
-.postCommentBtn {
+.postCommentBtn,
+.loginButton {
   background-color: #4c3cce;
   color: white;
 }
 
 .createBtn:hover,
-.postCommentBtn:hover {
+.postCommentBtn:hover,
+.loginButton:hover {
   color: white;
 }
 
 @media (min-width: 992px) {
   .blogCard {
     width: 40%;
+  }
+}
+
+.loginSignUpCard {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+    0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  height: 658px;
+}
+
+.loginSignUpCard .image,
+.loginSignUpCard .loginForm {
+  width: 50%;
+}
+
+.loginSignUpCard .image img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 767px) {
+  .loginSignUpCard .image {
+    display: none !important;
+  }
+  .loginSignUpCard .loginForm {
+    width: 100%;
+  }
+  .loginCard {
+    height: 100%;
+  }
+  .loginCard .loginText {
+    margin-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+}
+
+@media (max-width: 425px) {
+  .blogSmallCards {
+    margin-bottom: 30px;
   }
 }
